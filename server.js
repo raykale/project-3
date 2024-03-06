@@ -22,7 +22,8 @@ app.use(express.static(path.join(__dirname, 'build')))
 //     next()   
 // })
 // app.use('/api/items', require('./routes/api/items'))
-
+app.use('/api/users', require('./routes/api/users'))
+ 
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })

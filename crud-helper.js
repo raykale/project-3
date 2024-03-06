@@ -1,5 +1,7 @@
-require(dotenv).config()
+require('dotenv').config()
 require('./config/database')
 
-let user, item, category, order;
-let users, items, categories, orders;
+const User = require('./models/user')
+
+let user, item, category, order
+let users, items, categories, orders
